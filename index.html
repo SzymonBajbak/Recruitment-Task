@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <nav>
+    <div id="nav1">
+
+      <ul>
+        <li><img src="./img/logo.png" alt=""></li>
+        <li><a href="#">Steaks</a></li>
+        <li><a href="#">Burgers</a></li>
+        <li><a href="#">French Fries</a></li>
+        <li><a href="#">Drinks</a></li>
+        <li><a href="#">Gdzie dowozimy?</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+    <div id="nav2">
+      <ul class="nav-right">
+        <li><a href="#"><img src="./svg/mojekonto.svg"><span>Moje konto</span></a></li>
+        <li><a href="#"><img src="./svg/koszyk.svg"><span>Koszyk</span></a></li>
+        <li><a id="btn" href="#"><img src="./svg/zamow_ikona.svg"><span>Zamów</span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main1">
+    <div class="swiper flex-item">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slide-container">
+            <h1 class="h1"><span>Rabat 10%</span> na
+              pierwsze zamówienie!</h1>
+            <p>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z promocji -10%. Spiesz się, czas trwania promocji
+              do
+              końca lutego.</p>
+            <a class="btn1" href="#">Zamów online</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-container">
+            <h1 class="h1"><span>Rabat 10%</span> na
+              pierwsze zamówienie!</h1>
+            <p>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z promocji -10%. Spiesz się, czas trwania promocji
+              do
+              końca lutego.</p>
+            <a class="btn1" href="#">Zamów online</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-container">
+            <h1><span>Rabat 10%</span> na
+              pierwsze zamówienie!</h1>
+            <p>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z promocji -10%. Spiesz się, czas trwania promocji
+              do
+              końca lutego.</p>
+            <a class="btn1" href="#">Zamów online</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+
+    </div>
+    <div id="img" class="flex-item"></div>
+  </div>
+  <div class="apps">
+    <div><img src="./img/Pyszne.png" alt=""></div>
+    <div><img src="./img/DeliGoo.png" alt=""></div>
+    <div><img src="./img/Glovo.png" alt=""></div>
+    <div><img src="./img/Uber.png" alt=""></div>
+    <div><img src="./img/Bolt.png" alt=""></div>
+  </div>
+  <div class="main2">
+    <div id="square3" class="white-text flex-item">
+      <div>
+        <h2>Zestaw dla 3 osób</h2>
+        <p>Razem smakuje lepiej! Zamów zestaw obiadowy dla 3 osób już od <span id="span2">39 zł</span></p>
+        <a class="btn1" href="#">Zamów online</a>
+      </div>
+
+    </div>
+    <div id="square4" class="white-text flex-item">
+      <div>
+        <h2>UberEats</h2>
+        <p>Zamawiaj w aplikacji <span id="span3">10% taniej.</span>
+
+          Pobierz aplikację UberEats już dziś.</p>
+        <div class="icons">
+          <img src="./svg/Group 4.svg" alt="">
+          <img src="./svg/App_Store_(iOS).svg" alt="">
+          <img src="./svg/huawei-app-badge-9757fa 2.svg" alt="">
+        </div>
+        <a class="btn1" href="#">Zamów online</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 500,
+      spaceBetween: 100,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // }
+    });
+  </script>
+
+</body>
+
+</html>
